@@ -189,7 +189,7 @@ footer a {
 @media (max-width: 576px) {
   header .logo h1 {
     font-size: 1em;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   header ul {
     display: none;
