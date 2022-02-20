@@ -19,8 +19,8 @@ header {
   margin-top: -95px;
 }
 
-header .logo {
-  font-size: 0.7em;
+header .logo h1 {
+  font-size: 1.6em;
   color: #333;
   margin-left: 40px;
 }
@@ -162,6 +162,9 @@ footer a {
   }
 }
 @media (max-width: 500px) {
+  header .logo h1 {
+    font-size: 0.7;
+  }
   header ul {
     display: none;
   }
