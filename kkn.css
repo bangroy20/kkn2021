@@ -20,15 +20,9 @@ header {
 }
 
 header .logo h1 {
-<<<<<<< HEAD
   font-size: 1.6em;
   color: #333;
   margin-left: 50px;
-=======
-  font-size: 2em;
-  color: #333;
-  margin-left: 60px;
->>>>>>> ca5044569de3cac3d5bbfab3a609ce90dc83d82e
 }
 
 header ul {
@@ -45,7 +39,6 @@ header a {
   padding: 5px;
   font-weight: bold;
   margin-right: 20px;
-  font-size : 0.7em;
 }
 
 header a:hover {
@@ -108,7 +101,7 @@ header a:hover {
 }
 
 .content .saya {
-  font-size: 0.7em;
+  font-size: 0.8em;
   margin-top: 10px;
 }
 .content a {
@@ -117,7 +110,6 @@ header a:hover {
 }
 .content p {
   margin-top: 10px;
-  font-size : 0.8em;
 }
 
 .container .penulis {
@@ -189,7 +181,6 @@ footer a {
     background-position: 0 -10px;
   }
   header ul {
-<<<<<<< HEAD
     font-size: 0.9em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
@@ -199,14 +190,6 @@ footer a {
   header .logo h1 {
     font-size: 1.3em;
     margin-left: 40px;
-=======
-    font-size: 0.6em;
-  }
-}
-@media (max-width: 450px) {
-  header .logo h1 {
-    font-size : 0.5em;
->>>>>>> ca5044569de3cac3d5bbfab3a609ce90dc83d82e
   }
   header ul {
     display: none;
