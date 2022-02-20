@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e4ffe7;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #9cffa6;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  position: fixed;
+  margin-top: -95px;
+}
+
+header .logo {
+  font-size: 0.7em;
+  color: #333;
+  margin-left: 40px;
+}
+
+header ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+header a {
+  display: block;
+  text-decoration: none;
+  color: #4b4b4b;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+header a:hover {
+  background-color: #5ae769;
+  border-radius: 10px;
+}
+
+.container {
+  width: 85%;
+  background-color: white;
+  display: grid;
+  margin: 95px auto;
+  grid-template-areas:
+    "banner banner"
+    "content penulis"
+    "content kegiatan";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 200px auto;
+}
+
+.container .banner {
+  grid-area: banner;
+  background-image: url(banner.jpg);
+  background-size: cover;
+  background-position: 0 -40px;
+  border-top: 15px solid #9cffa6;
+  border-bottom: 15px solid #9cffa6;
+  height: 400px;
+}
+
+.container .content {
+  grid-area: content;
+  padding: 20px;
+  border-right: 5px solid #9cffa6;
+  background-color: white;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  margin-top: 20px;
+}
+
+.content .saya {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+.content a {
+  text-decoration: none;
+  color: #333;
+}
+.content p {
+  margin-top: 10px;
+}
+
+.container .penulis {
+  grid-area: penulis;
+  background-color: #f8f8f8;
+  height: 200px;
+  padding: 10px;
+}
+
+.penulis img {
+  padding: 5px;
+  width: 70px;
+  height: auto;
+  float: left;
+  margin-right: 5px;
+}
+
+.penulis p {
+  font-size: 0.8em;
+}
+
+.container .kegiatan {
+  padding: 10px;
+  grid-area: kegiatan;
+  background-color: #beffc5;
+}
+
+.kegiatan h4 {
+  text-align: center;
+  padding: 10px;
+}
+.kegiatan img {
+  width: 250px;
+  height: auto;
+  padding: 10px;
+  justify-content: center;
+}
+.kegiatan p {
+  text-align: center;
+  margin: auto;
+}
+
+footer {
+  background-color: #9cffa6;
+  text-align: center;
+  padding: 15px;
+  color: #333;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* responsive */
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .container .banner {
+    width: auto;
+    height: 270px;
+    background-size: cover;
+    background-position: 0 -10px;
+  }
+  header ul {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 500px) {
+  header ul {
+    display: none;
+  }
+
+  .container {
+    grid-template-areas:
+      "banner banner"
+      "content content"
+      "kegiatan kegiatan"
+      "penulis penulis";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .container .banner {
+    width: auto;
+    height: 150px;
+    background-size: cover;
+    background-position: 0 -10px;
+  }
+}
