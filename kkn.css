@@ -20,9 +20,9 @@ header {
 }
 
 header .logo h1 {
-  font-size: 1em;
+  font-size: 2em;
   color: #333;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 header ul {
