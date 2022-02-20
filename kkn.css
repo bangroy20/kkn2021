@@ -188,7 +188,7 @@ footer a {
 }
 @media (max-width: 576px) {
   header .logo h1 {
-    font-size: 1em;
+    font-size: 0.8em;
     margin-left: 20px;
   }
   header ul {
